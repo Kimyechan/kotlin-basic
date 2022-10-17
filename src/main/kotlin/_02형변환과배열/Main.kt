@@ -1,4 +1,4 @@
-package 형변환과배열
+package _02형변환과배열
 
 fun main() {
     // 코틀린은 명시적 형변환만 제공
