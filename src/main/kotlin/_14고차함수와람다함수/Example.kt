@@ -1,0 +1,17 @@
+package _14고차함수와람다함수
+
+fun main() {
+    b(::a)
+
+    val c: (String) -> Unit = { str -> println("$str 람다 함수") }
+    b(c)
+    val d = { str:String -> println("$str 람다 함수") }
+}
+
+fun a(str: String) {
+    println("$str 함수 a")
+}
+
+fun b(function: (String) -> Unit) {
+    function("b가 호출한")
+}
